@@ -38,25 +38,25 @@ open class Permission: NSObject {
     
     #if PERMISSION_LOCATION
     /// The permission to access the user's location when the app is in background.
-    open static let locationAlways = Permission(type: .locationAlways)
+    public static let locationAlways = Permission(type: .locationAlways)
     
     /// The permission to access the user's location when the app is in use.
-    open static let locationWhenInUse = Permission(type: .locationWhenInUse)
+    public static let locationWhenInUse = Permission(type: .locationWhenInUse)
     #endif
     
     #if PERMISSION_MICROPHONE
     /// The permission to access the microphone.
-    open static let microphone = Permission(type: .microphone)
+    public static let microphone = Permission(type: .microphone)
     #endif
     
     #if PERMISSION_CAMERA
     /// The permission to access the camera.
-    open static let camera = Permission(type: .camera)
+    public static let camera = Permission(type: .camera)
     #endif
     
     #if PERMISSION_PHOTOS
     /// The permission to access the user's photos.
-    open static let photos = Permission(type: .photos)
+    public static let photos = Permission(type: .photos)
     #endif
     
     #if PERMISSION_REMINDERS
