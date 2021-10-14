@@ -39,7 +39,7 @@ extension Permission: CLLocationManagerDelegate {
             requestedLocation = false
             triggerCallbacks  = false
             callbacks(self.status)
-        case (false, false)
+        case (false, false):
             triggerCallbacks  = true
         default:
             break
