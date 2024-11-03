@@ -33,6 +33,7 @@ internal extension Permission {
             
         switch status {
         case .authorized:          return .authorized
+        case .limited:             return .authorized
         case .restricted, .denied: return .denied
         case .notDetermined:       return .notDetermined
         }
